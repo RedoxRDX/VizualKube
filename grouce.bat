@@ -1,0 +1,1 @@
+gource --auto-skip-seconds 1 --key
