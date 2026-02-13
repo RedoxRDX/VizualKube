@@ -22,7 +22,17 @@ var config = new
     configjsonfilename
 };
 if (File.Exists(configjsonfilename))
-{ 
+{
+    string JsonConfigRead = File.ReadAllText(configjsonfilename);
+   string JsonConfigDeserialized = JsonSerializer.Deserialize<JsonElement>(JsonConfigRead).ToString();
+    var deserializedConfig = JsonSerializer.Deserialize<Dictionary<string, object>>(JsonConfigRead);
+    AppTmpDir = deserializedConfig["AppTmpDir"].ToString();
+    PythonFile = deserializedConfig["PythonFile"].ToString();
+    BatchFile = deserializedConfig["BatchFile"].ToString();
+    DoCleanTMPFiles = bool.Parse(deserializedConfig["DoCleanTMPFiles"].ToString());
+    colorNumber = int.Parse(deserializedConfig["colorNumber"].ToString());
+    KubeParts = deserializedConfig["KubeParts"].ToString();
+    DoGeneratePyKube = bool.Parse(deserializedConfig["DoGeneratePyKube"].ToString());
 
 
 }
@@ -34,6 +44,7 @@ else
 SayIt("Config file not foud.\n Config file created with default settings.\n Please edit the config.json file to change settings and restart the application.\n");
 Console.WriteLine("Press any key to continue...");
     Console.ReadKey();
+    Console.Clear();
 }
 
 
