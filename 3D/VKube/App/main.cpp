@@ -5,6 +5,8 @@
 #include <QQmlApplicationEngine>
 
 #include "autogen/environment.h"
+#include <iostream>
+#include <string>
 
 int main(int argc, char *argv[])
 {

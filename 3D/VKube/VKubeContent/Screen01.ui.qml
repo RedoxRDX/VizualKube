@@ -15,13 +15,16 @@ import VKube
 
 Rectangle {
     width: Constants.width
-    height: Constants.height
-
-    color: Constants.backgroundColor
+    height: 600
+    color: "#000000"
 
     View3D {
         id: extendedView3D
         anchors.fill: parent
+        anchors.leftMargin: 0
+        anchors.rightMargin: 0
+        anchors.topMargin: 140
+        anchors.bottomMargin: -140
 
         environment: sceneEnvironment
 
@@ -50,7 +53,27 @@ Rectangle {
                 eulerRotation.x: 0
                 materials: defaultMaterial
                 source: "#Cube"
-                z: -0.25923
+                eulerRotation.z: 0
+                z: 0
+            }
+        }
+
+        Slider {
+            id: slider
+            x: 0
+            y: -67
+            width: 155
+            height: 48
+            value: 0.5
+
+            Text {
+                id: text1
+                x: 8
+                y: 0
+                color: "#ffffff"
+                text: qsTr("Cube angle")
+                font.pixelSize: 12
+                rotation: -0.045
             }
         }
     }
@@ -60,11 +83,12 @@ Rectangle {
         PrincipledMaterial {
             id: defaultMaterial
             objectName: "Default Material"
-            baseColor: "#4aee45"
+            baseColor: "#ffffff"
         }
     }
 
     Text {
+        color: "#ffffff"
         text: qsTr("VKube3D")
         anchors.top: parent.top
         anchors.horizontalCenter: parent.horizontalCenter
@@ -76,7 +100,7 @@ Rectangle {
 
 /*##^##
 Designer {
-    D{i:0}D{i:3;cameraSpeed3d:25;cameraSpeed3dMultiplier:1}
+    D{i:0}D{i:3;cameraSpeed3d:40;cameraSpeed3dMultiplier:1}
 }
 ##^##*/
 
