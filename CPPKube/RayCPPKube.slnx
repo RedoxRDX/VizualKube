@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="RayCPPKube/RayCPPKube.vcxproj" />
+  <Project Path="RayCPPKube/RayCPPKube.vcxproj" Id="b5e2be25-575a-40ad-801b-013aee3491a7" />
 </Solution>
