@@ -1,2 +1,0 @@
-﻿  VulkainV3DKube.cpp
-D:\Dev\VizualKube\VulkainV3DKube\VulkainV3DKube.cpp(2,10): error C1083: Impossible d'ouvrir le fichier include : 'vulkan/vulkan.h' : No such file or directory
