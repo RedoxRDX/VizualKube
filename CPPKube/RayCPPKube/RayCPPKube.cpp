@@ -1,18 +1,14 @@
 #include "../include/TeaLib.h"
 #include "../raylib/include/Raylib.h"
+#include "../raylib/include/rlgl.h" // Indispensable pour les transformations manuelles
 
 using namespace TeaLib;
 
 int main()
 {
-    printLine("Loading...");
-    std::string TeaLibVersionLoaded = TeaLibVersion();
-    printLine("TeaLib " + TeaLibVersionLoaded + " Loaded");
-    printLine("Initializing Raylib...");
-    InitWindow(800, 600, "visualKube 3D");
-    printLine("Raylib Initialized");
+    InitWindow(800, 600, "VKube");
     SetTargetFPS(60);
-    Vector3 position = { 0, 0, 0 };
+
     Camera3D camera = { 0 };
     camera.position = { 4.0f, 4.0f, 4.0f };
     camera.target = { 0.0f, 0.0f, 0.0f };
@@ -20,24 +16,26 @@ int main()
     camera.fovy = 45.0f;
     camera.projection = CAMERA_PERSPECTIVE;
 
-    SetWindowTitle("VKube");
+    float rotationAngle = 0.0f;
 
     while (!WindowShouldClose()) {
 
+        rotationAngle += 1.5f;
+
         BeginDrawing();
         ClearBackground(BLACK);
-
         DrawText("CPPVKube", 10, 10, 20, RAYWHITE);
-
         BeginMode3D(camera);
-
-        DrawCube(position, 2.0f, 2.0f, 2.0f, RED);
-        DrawCubeWires(position, 2.0f, 2.0f, 2.0f, BLUE);
+        rlPushMatrix();
+        rlRotatef(rotationAngle, 0, 1, 0);
+        DrawCube(Vector3{ 0,0,0 }, 2.0f, 2.0f, 2.0f, RED);
+        DrawCubeWires(Vector3{ 0,0,0 }, 2.0f, 2.0f, 2.0f, WHITE);
+        rlPopMatrix();
 
         EndMode3D();
-
         EndDrawing();
     }
 
     CloseWindow();
+    return 0;
 }
