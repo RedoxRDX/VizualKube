@@ -26,7 +26,6 @@ int main()
 
     bool rotating = false;
     UpdateRotation(rotating);
-    UpdateRotationSpeed(rotationSpeed);
     SetWindowSize(500, 600);
     MaximizeWindow();
 
@@ -62,7 +61,7 @@ int main()
 
 void UpdateRotationSpeed(float& rotationSpeed)
 {
-    printLine("Rotation Speed (default 0.5)");
+    printLine("Rotation Speed (default 0.5f)");
     print("-->");
     rotationSpeed = readInt();
     clear();
@@ -98,7 +97,10 @@ void UpdateRotation(bool& rotating)
         rotating = true;
         printLine("Rotation Activated");
         clear();
+        float rotationSpeed = 0.5f;
+        UpdateRotationSpeed(rotationSpeed);
     }
-    else if (ActivateRotationYorN != "Y" or ActivateRotationYorN != "y") { rotating = false; clear(); }
-    else {}
+    else if (ActivateRotationYorN == "N" or ActivateRotationYorN == "n") { rotating = false; clear(); }
+    else {
+        UpdateRotation(rotating);}
 }
