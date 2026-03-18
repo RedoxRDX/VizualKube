@@ -1,5 +1,9 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include "../include/TeaLib.h"
 #include "../raylib/include/Raylib.h"
+#define RAYGUI_IMPLEMENTATION
+#include "../raylib/include/RayGui.h"
 #include "../raylib/include/rlgl.h" 
 #include "RayCPPKube.h"
 using namespace TeaLib;
@@ -12,7 +16,7 @@ int main()
 
     std::string TeaLibActualVersion = TeaLibVersion();
     printLine("Inisialating TeaLib "+ TeaLibActualVersion);
-    InitWindow(500, 600, "VKube");
+    InitWindow(600, 800, "VKube");
     SetTargetFPS(60);
     Camera3D camera = { 0 };
     camera.position = { 4.0f, 4.0f, 4.0f };
@@ -26,10 +30,8 @@ int main()
     float rotationAngle = 0.0f;
 	float rotationSpeed = 0.5f;
 
-    AskSize(X_axis_size, Z_axis_size, Y_axis_size);
 
-    bool rotating = false;
-    UpdateRotation(rotating);
+    bool rotating = true;
     SetWindowFocused();
     while (!WindowShouldClose()) {
 
@@ -43,6 +45,10 @@ int main()
         else {  }
 
         BeginDrawing();
+        GuiSlider(Rectangle{ 60, 40, 150, 20 }, "X Size", TextFormat("%2.2f", X_axis_size), &X_axis_size, 0.1f, 2.5f);
+        GuiSlider(Rectangle{ 60, 70, 150, 20 }, "Y Size", TextFormat("%2.2f", Y_axis_size), &Y_axis_size, 0.1f, 2.5f);
+        GuiSlider(Rectangle{ 60, 100, 150, 20 }, "Z Size", TextFormat("%2.2f", Z_axis_size), &Z_axis_size, 0.1f, 2.5f);
+        GuiSlider(Rectangle{ 60, 140, 150, 20 }, "Speed", TextFormat("%2.2f", rotationSpeed), &rotationSpeed, 0.0f, 5.0f);
         ClearBackground(BLACK);
         DrawText("CPPVKube", 10, 10, 20, RAYWHITE);
         BeginMode3D(camera);
@@ -106,3 +112,4 @@ void UpdateRotation(bool& rotating)
     else {
         UpdateRotation(rotating);}
 }
+

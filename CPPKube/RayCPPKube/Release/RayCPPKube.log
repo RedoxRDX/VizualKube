@@ -1,0 +1,57 @@
+﻿  RayCPPKube.cpp
+D:\Dev\VizualKube\CPPKube\RayCPPKube\RayCPPKube.cpp(74,28): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+D:\Dev\VizualKube\CPPKube\RayCPPKube\RayCPPKube.cpp(84,26): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+D:\Dev\VizualKube\CPPKube\RayCPPKube\RayCPPKube.cpp(89,26): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+D:\Dev\VizualKube\CPPKube\RayCPPKube\RayCPPKube.cpp(94,26): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _GetFontDefault
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _DrawRectangleGradientEx
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _DrawCube
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _UnloadCodepoints
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _IsKeyDown
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _Fade
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _DrawTextCodepoint
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _GetMouseWheelMove
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _EndMode3D
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _IsMouseButtonPressed
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _GetGlyphIndex
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _GetScreenWidth
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _GetMousePosition
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _LoadFontEx
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _SetTargetFPS
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _DrawRectangleGradientV
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _GetCodepointPrevious
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _SetWindowFocused
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _BeginMode3D
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _GetCodepointNext
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _rlPushMatrix
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _TextToInteger
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _GetCharPressed
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _ClearBackground
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _CheckCollisionPointRec
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _MeasureTextEx
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _UnloadFileText
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _UnloadTexture
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _IsMouseButtonDown
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _CodepointToUTF8
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _GetColor
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _rlRotatef
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _LoadFileText
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _IsKeyPressed
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _LoadTextureFromImage
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _WindowShouldClose
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _IsMouseButtonReleased
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _rlPopMatrix
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _DrawRectangle
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _TextFormat
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _GetCodepoint
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _BeginDrawing
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _SetShapesTexture
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _LoadCodepoints
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _InitWindow
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _DecompressData
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _GetDirectoryPath
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _DrawCubeWires
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _DrawText
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _CloseWindow
+RayCPPKube.obj : error LNK2001: symbole externe non résolu _EndDrawing
+D:\Dev\VizualKube\CPPKube\Release\RayCPPKube.exe : fatal error LNK1120: 51 externes non résolus
