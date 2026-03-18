@@ -47,10 +47,6 @@ int main()
 
         BeginDrawing();
         ClearBackground(BLACK);
-        GuiSlider(Rectangle{ 60, 40, 150, 20 }, "X Size", TextFormat("%2.2f", X_axis_size), &X_axis_size, 0.1f, 2.5f);
-        GuiSlider(Rectangle{ 60, 70, 150, 20 }, "Y Size", TextFormat("%2.2f", Y_axis_size), &Y_axis_size, 0.1f, 2.5f);
-        GuiSlider(Rectangle{ 60, 100, 150, 20 }, "Z Size", TextFormat("%2.2f", Z_axis_size), &Z_axis_size, 0.1f, 2.5f);
-        GuiSlider(Rectangle{ 60, 140, 150, 20 }, "Speed", TextFormat("%2.2f", rotationSpeed), &rotationSpeed, 0.0f, 5.0f);
         DrawText("CPPVKube", 10, 10, 20, RAYWHITE);
         BeginMode3D(camera);
         rlPushMatrix();
@@ -60,6 +56,11 @@ int main()
         rlPopMatrix();
 
         EndMode3D();
+        GuiSlider(Rectangle{ 60, 40, 150, 20 }, "X Size", TextFormat("%2.2f", X_axis_size), &X_axis_size, 0.1f, 2.5f);
+        GuiSlider(Rectangle{ 60, 70, 150, 20 }, "Y Size", TextFormat("%2.2f", Y_axis_size), &Y_axis_size, 0.1f, 2.5f);
+        GuiSlider(Rectangle{ 60, 100, 150, 20 }, "Z Size", TextFormat("%2.2f", Z_axis_size), &Z_axis_size, 0.1f, 2.5f);
+        GuiSlider(Rectangle{ 60, 140, 150, 20 }, "Speed", TextFormat("%2.2f", rotationSpeed), &rotationSpeed, 0.0f, 5.0f);
+
         EndDrawing();
 
     }
