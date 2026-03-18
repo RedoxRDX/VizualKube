@@ -20,7 +20,14 @@ int main()
     SetConfigFlags(FLAG_MSAA_4X_HINT);
     InitWindow(600, 800, "VKube");
     SetTargetFPS(60);
-   
+    GuiSetStyle(SLIDER, BASE_COLOR_NORMAL, ColorToInt(BLACK));
+    GuiSetStyle(SLIDER, BASE_COLOR_FOCUSED, ColorToInt(BLACK));
+    GuiSetStyle(SLIDER, BASE_COLOR_PRESSED, ColorToInt(RED));
+    GuiSetStyle(SLIDER, BORDER_COLOR_NORMAL, ColorToInt(RED));
+    GuiSetStyle(SLIDER, BORDER_COLOR_FOCUSED, ColorToInt(RED));
+    GuiSetStyle(SLIDER, BORDER_COLOR_PRESSED, ColorToInt(RED));
+    GuiSetStyle(SLIDER, TEXT_COLOR_FOCUSED, ColorToInt(RED));
+    GuiSetStyle(DEFAULT, TEXT_COLOR_NORMAL, ColorToInt(WHITE));
     Camera3D camera = { 0 };
     camera.position = { 4.0f, 4.0f, 4.0f };
     camera.target = { 0.0f, 0.0f, 0.0f };
