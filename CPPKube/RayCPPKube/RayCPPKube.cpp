@@ -6,9 +6,13 @@ using namespace TeaLib;
 
 int main()
 {
+
+
+
+
     std::string TeaLibActualVersion = TeaLibVersion();
     printLine("Inisialating TeaLib "+ TeaLibActualVersion);
-    InitWindow(400, 1, "VKube");
+    InitWindow(500, 600, "VKube");
     SetTargetFPS(60);
     Camera3D camera = { 0 };
     camera.position = { 4.0f, 4.0f, 4.0f };
@@ -26,12 +30,10 @@ int main()
 
     bool rotating = false;
     UpdateRotation(rotating);
-    SetWindowSize(500, 600);
-    MaximizeWindow();
-
-   printLine("Everyting looks fine...");
+    SetWindowFocused();
     while (!WindowShouldClose()) {
 
+     
         if (rotating == true) 
         {
             rotationAngle += rotationSpeed;
