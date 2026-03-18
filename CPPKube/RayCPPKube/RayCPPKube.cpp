@@ -24,11 +24,11 @@ int main()
     camera.up = { 0.0f, 1.0f, 0.0f };
     camera.fovy = 45.0f;
     camera.projection = CAMERA_PERSPECTIVE;
-    float X_axis_size = 2;
-    float Z_axis_size = 2;
-    float Y_axis_size = 2;
+    float X_axis_size = 2.0f;
+    float Z_axis_size = 2.0f;
+    float Y_axis_size = 2.0f;
     float rotationAngle = 0.0f;
-	float rotationSpeed = 0.5f;
+	float rotationSpeed = 0.0f;
 
 
     bool rotating = true;
@@ -53,7 +53,7 @@ int main()
         DrawText("CPPVKube", 10, 10, 20, RAYWHITE);
         BeginMode3D(camera);
         rlPushMatrix();
-        rlRotatef(rotationAngle, 0, 1, 0);
+        rlRotatef(rotationAngle, 0, 0, 0);
         DrawCube(Vector3{ 0,0,0 }, X_axis_size, Z_axis_size, Y_axis_size, RED);
         DrawCubeWires(Vector3{ 0,0,0 }, X_axis_size, Z_axis_size, Y_axis_size, WHITE);
         rlPopMatrix();
