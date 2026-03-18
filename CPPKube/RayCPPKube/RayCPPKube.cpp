@@ -8,6 +8,7 @@
 #include "RayCPPKube.h"
 using namespace TeaLib;
 
+
 int main()
 {
 
@@ -19,6 +20,7 @@ int main()
     SetConfigFlags(FLAG_MSAA_4X_HINT);
     InitWindow(600, 800, "VKube");
     SetTargetFPS(60);
+   
     Camera3D camera = { 0 };
     camera.position = { 4.0f, 4.0f, 4.0f };
     camera.target = { 0.0f, 0.0f, 0.0f };
