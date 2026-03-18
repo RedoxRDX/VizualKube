@@ -15,7 +15,7 @@ int main()
 
 
     std::string TeaLibActualVersion = TeaLibVersion();
-    printLine("Inisialating TeaLib "+ TeaLibActualVersion);
+    printLine("Inisialating TeaLib " + TeaLibActualVersion);
     InitWindow(600, 800, "VKube");
     SetTargetFPS(60);
     Camera3D camera = { 0 };
@@ -28,21 +28,21 @@ int main()
     float Z_axis_size = 2.0f;
     float Y_axis_size = 2.0f;
     float rotationAngle = 0.0f;
-	float rotationSpeed = 0.0f;
+    float rotationSpeed = 0.5f;
 
 
     bool rotating = true;
     SetWindowFocused();
     while (!WindowShouldClose()) {
 
-     
-        if (rotating == true) 
+
+        if (rotating == true)
         {
             rotationAngle += rotationSpeed;
-            
+
         }
 
-        else {  }
+        else {}
 
         BeginDrawing();
         GuiSlider(Rectangle{ 60, 40, 150, 20 }, "X Size", TextFormat("%2.2f", X_axis_size), &X_axis_size, 0.1f, 2.5f);
@@ -53,14 +53,14 @@ int main()
         DrawText("CPPVKube", 10, 10, 20, RAYWHITE);
         BeginMode3D(camera);
         rlPushMatrix();
-        rlRotatef(rotationAngle, 0, 0, 0);
+        rlRotatef(rotationAngle, 0, 1, 0);
         DrawCube(Vector3{ 0,0,0 }, X_axis_size, Z_axis_size, Y_axis_size, RED);
         DrawCubeWires(Vector3{ 0,0,0 }, X_axis_size, Z_axis_size, Y_axis_size, WHITE);
         rlPopMatrix();
 
         EndMode3D();
         EndDrawing();
-       
+
     }
 
     CloseWindow();
@@ -97,7 +97,7 @@ void AskSize(float& X_axis_size, float& Z_axis_size, float& Y_axis_size)
 
 void UpdateRotation(bool& rotating)
 {
-   
+
     printLine("Activate Rotation ? (Y/N)");
     std::string ActivateRotationYorN = readString();
     if (ActivateRotationYorN == "Y" or ActivateRotationYorN == "y")
@@ -110,6 +110,6 @@ void UpdateRotation(bool& rotating)
     }
     else if (ActivateRotationYorN == "N" or ActivateRotationYorN == "n") { rotating = false; clear(); }
     else {
-        UpdateRotation(rotating);}
+        UpdateRotation(rotating);
+    }
 }
-
