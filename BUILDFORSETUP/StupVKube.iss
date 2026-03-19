@@ -118,7 +118,7 @@ begin
   // -InstallDir : force l'installation dans le dossier Program Files commun
   if Exec('powershell.exe', 
      '-ExecutionPolicy Bypass -File "' + ExpandConstant('{tmp}\dotnet-install.ps1') + '" ' +
-     '-Runtime windowsdesktop -Channel 10.0 -InstallDir "' + ExpandConstant('{commonpf}\dotnet') + '"', 
+     '-Runtime windowsdesktop -Channel 10.0"', 
      '', SW_HIDE, ewWaitUntilTerminated, ResultCode) then
   begin
     Result := (ResultCode = 0);
