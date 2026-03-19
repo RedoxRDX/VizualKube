@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             RayKube = new Button();
             button3 = new Button();
             Noting = new Button();
+            comboBox1 = new ComboBox();
             SuspendLayout();
             // 
             // label1
@@ -67,6 +69,7 @@
             button3.TabIndex = 4;
             button3.Text = "Nothing here YET";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // Noting
             // 
@@ -74,19 +77,32 @@
             Noting.Name = "Noting";
             Noting.Size = new Size(360, 45);
             Noting.TabIndex = 5;
-            Noting.Text = "button4";
+            Noting.Text = "CSKube";
             Noting.UseVisualStyleBackColor = true;
+            Noting.Click += Noting_Click;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "RayKube Gui +Console", "RayKube Gui Only" });
+            comboBox1.Location = new Point(12, 173);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(360, 23);
+            comboBox1.TabIndex = 7;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(384, 361);
+            Controls.Add(comboBox1);
             Controls.Add(Noting);
             Controls.Add(button3);
             Controls.Add(RayKube);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             ImeMode = ImeMode.Disable;
             Name = "Form1";
             Text = "VKube CSL";
@@ -100,5 +116,6 @@
         private Button RayKube;
         private Button button3;
         private Button Noting;
+        private ComboBox comboBox1;
     }
 }
