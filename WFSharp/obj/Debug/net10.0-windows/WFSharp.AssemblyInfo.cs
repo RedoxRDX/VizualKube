@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WFSharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+934df2af0ac6b4b0faf3ced847e1bec229e024cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72049017795bdca3efc97932d58836e206ffbe1f")]
 [assembly: System.Reflection.AssemblyProductAttribute("WFSharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WFSharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
