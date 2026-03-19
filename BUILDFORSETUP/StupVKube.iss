@@ -3,7 +3,7 @@
 ; Non-commercial use only
 
 #define MyAppName "VKube"
-#define MyAppVersion "1.0"
+#define MyAppVersion "0.0.5"
 #define MyAppPublisher "Yel0w"
 #define MyAppURL "well i will probaly put the github here"
 #define MyAppExeName "WFSharp.exe"

@@ -38,74 +38,53 @@
             // 
             // label1
             // 
-            label1.AutoSize = true;
+            resources.ApplyResources(label1, "label1");
             label1.FlatStyle = FlatStyle.System;
-            label1.Font = new Font("JetBrains Mono", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(125, 9);
             label1.Name = "label1";
-            label1.Size = new Size(140, 16);
-            label1.TabIndex = 1;
-            label1.Text = "VKube SharpLauncher";
-            label1.TextAlign = ContentAlignment.TopCenter;
             label1.Click += label1_Click;
             // 
             // RayKube
             // 
-            RayKube.Location = new Point(12, 202);
+            resources.ApplyResources(RayKube, "RayKube");
             RayKube.Name = "RayKube";
-            RayKube.Size = new Size(360, 45);
-            RayKube.TabIndex = 2;
-            RayKube.Text = "RayKube";
             RayKube.UseVisualStyleBackColor = true;
             RayKube.Click += button1_Click_1;
             // 
             // button3
             // 
             button3.Cursor = Cursors.No;
-            button3.Enabled = false;
-            button3.Location = new Point(12, 304);
+            resources.ApplyResources(button3, "button3");
             button3.Name = "button3";
-            button3.Size = new Size(360, 45);
-            button3.TabIndex = 4;
-            button3.Text = "Nothing here YET";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
             // Noting
             // 
-            Noting.Location = new Point(12, 253);
+            resources.ApplyResources(Noting, "Noting");
             Noting.Name = "Noting";
-            Noting.Size = new Size(360, 45);
-            Noting.TabIndex = 5;
-            Noting.Text = "CSKube";
             Noting.UseVisualStyleBackColor = true;
             Noting.Click += Noting_Click;
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "RayKube Gui +Console", "RayKube Gui Only" });
-            comboBox1.Location = new Point(12, 173);
+            comboBox1.Items.AddRange(new object[] { resources.GetString("comboBox1.Items"), resources.GetString("comboBox1.Items1") });
+            resources.ApplyResources(comboBox1, "comboBox1");
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(360, 23);
-            comboBox1.TabIndex = 7;
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(384, 361);
             Controls.Add(comboBox1);
             Controls.Add(Noting);
             Controls.Add(button3);
             Controls.Add(RayKube);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Icon = (Icon)resources.GetObject("$this.Icon");
-            ImeMode = ImeMode.Disable;
+            HelpButton = true;
             Name = "Form1";
-            Text = "VKube CSL";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();

@@ -7,19 +7,31 @@
       "RelativeMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|d:\\dev\\vizualkube\\wfsharp\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|solutionrelative:properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|d:\\dev\\vizualkube\\wfsharp\\properties\\publishprofiles\\heavy-autonome-winx64.pubxml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|solutionrelative:properties\\publishprofiles\\heavy-autonome-winx64.pubxml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|d:\\dev\\vizualkube\\wfsharp\\properties\\publishprofiles\\needframeworkbutlighter.pubxml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|solutionrelative:properties\\publishprofiles\\needframeworkbutlighter.pubxml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|d:\\dev\\vizualkube\\wfsharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Dev\\VizualKube\\RED_Black_BG.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|d:\\dev\\vizualkube\\wfsharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|d:\\dev\\vizualkube\\wfsharp\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Dev\\VizualKube\\RED_Black_BG.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|d:\\dev\\vizualkube\\wfsharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|d:\\dev\\vizualkube\\wfsharp\\wfsharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -54,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "RED_Black_BG.png",
               "DocumentMoniker": "D:\\Dev\\VizualKube\\RED_Black_BG.png",
               "RelativeDocumentMoniker": "..\\RED_Black_BG.png",
@@ -68,6 +80,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "D:\\Dev\\VizualKube\\WFSharp\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "Properties\\Resources.resx",
+              "ToolTip": "D:\\Dev\\VizualKube\\WFSharp\\Properties\\Resources.resx",
+              "RelativeToolTip": "Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-03-19T20:31:59.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NeedFrameWorkButLighter.pubxml",
+              "DocumentMoniker": "D:\\Dev\\VizualKube\\WFSharp\\Properties\\PublishProfiles\\NeedFrameWorkButLighter.pubxml",
+              "RelativeDocumentMoniker": "Properties\\PublishProfiles\\NeedFrameWorkButLighter.pubxml",
+              "ToolTip": "D:\\Dev\\VizualKube\\WFSharp\\Properties\\PublishProfiles\\NeedFrameWorkButLighter.pubxml",
+              "RelativeToolTip": "Properties\\PublishProfiles\\NeedFrameWorkButLighter.pubxml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-03-19T20:31:53.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Heavy-AUTONOME-winx64.pubxml",
+              "DocumentMoniker": "D:\\Dev\\VizualKube\\WFSharp\\Properties\\PublishProfiles\\Heavy-AUTONOME-winx64.pubxml",
+              "RelativeDocumentMoniker": "Properties\\PublishProfiles\\Heavy-AUTONOME-winx64.pubxml",
+              "ToolTip": "D:\\Dev\\VizualKube\\WFSharp\\Properties\\PublishProfiles\\Heavy-AUTONOME-winx64.pubxml",
+              "RelativeToolTip": "Properties\\PublishProfiles\\Heavy-AUTONOME-winx64.pubxml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-03-19T20:31:52.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Dev\\VizualKube\\WFSharp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -80,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "WFSharp.csproj",
               "DocumentMoniker": "D:\\Dev\\VizualKube\\WFSharp\\WFSharp.csproj",
               "RelativeDocumentMoniker": "WFSharp.csproj",
@@ -88,7 +138,8 @@
               "RelativeToolTip": "WFSharp.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-19T19:27:43.526Z"
+              "WhenOpened": "2026-03-19T19:27:43.526Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -98,13 +149,14 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\Dev\\VizualKube\\WFSharp\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAnwDwAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAtwB0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T19:26:50.863Z"
+              "WhenOpened": "2026-03-19T19:26:50.863Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\Dev\\VizualKube\\WFSharp\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
@@ -117,14 +169,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "WFSharp",
               "DocumentMoniker": "D:\\Dev\\VizualKube\\WFSharp\\WFSharp.csproj",
               "RelativeDocumentMoniker": "WFSharp.csproj",
               "ToolTip": "D:\\Dev\\VizualKube\\WFSharp\\WFSharp.csproj",
               "RelativeToolTip": "WFSharp.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-19T19:25:04.626Z"
+              "WhenOpened": "2026-03-19T19:25:04.626Z",
+              "EditorCaption": ""
             }
           ]
         }

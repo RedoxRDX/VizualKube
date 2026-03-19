@@ -7,7 +7,7 @@ string BatchFile = AppTmpDir + @"PyKube.bat";
 bool DoCleanTMPFiles = true;
 int colorNumber = 2;
 string KubeParts = "#";
-bool DoGeneratePyKube = true;
+bool DoGeneratePyKube = false;
 string configjsonfilename = "config.json";
 
 var config = new
