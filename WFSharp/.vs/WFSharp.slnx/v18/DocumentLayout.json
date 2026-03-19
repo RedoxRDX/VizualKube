@@ -1,12 +1,104 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Dev\\VizualKube\\WFSharp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|d:\\dev\\vizualkube\\wfsharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|d:\\dev\\vizualkube\\wfsharp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|d:\\dev\\vizualkube\\wfsharp\\wfsharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|solutionrelative:wfsharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|d:\\dev\\vizualkube\\wfsharp\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|d:\\dev\\vizualkube\\wfsharp\\wfsharp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{C6EF9E3B-A1C3-B3F4-228D-D47CDE9F23F5}|WFSharp.csproj|solutionrelative:wfsharp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Conception]",
+              "DocumentMoniker": "D:\\Dev\\VizualKube\\WFSharp\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\Dev\\VizualKube\\WFSharp\\Form1.cs [Conception]*",
+              "RelativeToolTip": "Form1.cs [Conception]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T19:24:59.529Z",
+              "IsPinned": true,
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WFSharp",
+              "DocumentMoniker": "D:\\Dev\\VizualKube\\WFSharp\\WFSharp.csproj",
+              "RelativeDocumentMoniker": "WFSharp.csproj",
+              "ToolTip": "D:\\Dev\\VizualKube\\WFSharp\\WFSharp.csproj",
+              "RelativeToolTip": "WFSharp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-19T19:27:43.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Dev\\VizualKube\\WFSharp\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\Dev\\VizualKube\\WFSharp\\Form1.cs*",
+              "RelativeToolTip": "Form1.cs*",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAMwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T19:26:50.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\Dev\\VizualKube\\WFSharp\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "D:\\Dev\\VizualKube\\WFSharp\\Form1.Designer.cs*",
+              "RelativeToolTip": "Form1.Designer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T19:26:39.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WFSharp",
+              "DocumentMoniker": "D:\\Dev\\VizualKube\\WFSharp\\WFSharp.csproj",
+              "RelativeDocumentMoniker": "WFSharp.csproj",
+              "ToolTip": "D:\\Dev\\VizualKube\\WFSharp\\WFSharp.csproj",
+              "RelativeToolTip": "WFSharp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-19T19:25:04.626Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
