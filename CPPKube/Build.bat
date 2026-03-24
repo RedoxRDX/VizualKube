@@ -1,12 +1,10 @@
 @echo off
 if not exist BUILD mkdir BUILD
 
-:: 1. Tenter de compiler l'icône
 if exist resource.rc (
     windres resource.rc -O coff -o BUILD\icon.res
 )
 
-:: 2. Vérifier si la ressource a bien été créée
 set ICON_RES=
 if exist BUILD\icon.res set ICON_RES=BUILD\icon.res
 

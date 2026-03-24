@@ -85,8 +85,6 @@ Source: "D:\Dev\VizualKube\WFSharp\bin\Release\net10.0-windows\WFSharp.exe"; Des
 Source: "D:\Dev\VizualKube\WFSharp\bin\Release\net10.0-windows\WFSharp.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
 Source: "D:\Dev\VizualKube\BUILDFORSETUP\CPPKube\*"; DestDir: "{app}\CPPKube"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "D:\Dev\VizualKube\BUILDFORSETUP\CSKube\*"; DestDir: "{app}\CSKube"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "D:\Dev\VizualKube\BUILDFORSETUP\dotnet-install.ps1"; Flags: dontcopy
-; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
 Root: HKA; Subkey: "Software\Classes\{#MyAppAssocExt}\OpenWithProgids"; ValueType: string; ValueName: "{#MyAppAssocKey}"; ValueData: ""; Flags: uninsdeletevalue
@@ -101,42 +99,3 @@ Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: de
 [Run]
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 
-[Code]
-function InstallDotNet(): Boolean;
-var
-  ResultCode: Integer;
-begin
-  // Affiche un message sur l'interface de l'installeur
-  WizardForm.StatusLabel.Caption := 'Installation du runtime .NET 10 Desktop...';
-  
-  // Extrait le script PowerShell vers un dossier temporaire
-  ExtractTemporaryFile('dotnet-install.ps1');
-
-  // Exécution du script avec les paramètres :
-  // -Runtime windowsdesktop : installe le runtime spécifique WinForms/WPF
-  // -Channel 10.0 : cible la version 10.0
-  // -InstallDir : force l'installation dans le dossier Program Files commun
-  if Exec('powershell.exe', 
-     '-ExecutionPolicy Bypass -File "' + ExpandConstant('{tmp}\dotnet-install.ps1') + '" ' +
-     '-Runtime windowsdesktop -Channel 10.0"', 
-     '', SW_HIDE, ewWaitUntilTerminated, ResultCode) then
-  begin
-    Result := (ResultCode = 0);
-  end
-  else
-  begin
-    Result := False;
-  end;
-end;
-
-procedure CurStepChanged(CurStep: TSetupStep);
-begin
-  // On lance l'installation juste après la copie des fichiers de votre application
-  if CurStep = ssPostInstall then
-  begin
-    if not InstallDotNet() then
-    begin
-      MsgBox('L''installation de .NET 10 a échoué. Vous devrez peut-être l''installer manuellement.', mbError, MB_OK);
-    end;
-  end;
-end;
