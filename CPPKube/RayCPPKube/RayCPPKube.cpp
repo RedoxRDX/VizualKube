@@ -1,10 +1,10 @@
 #define _CRT_SECURE_NO_WARNINGS
-
-#include "../include/TeaLib.h"
-#include "../raylib/include/Raylib.h"
+#include "include/TeaLib.h"
+#include "raylib/include/raylib.h"
 #define RAYGUI_IMPLEMENTATION
-#include "../raylib/include/RayGui.h"
-#include "../raylib/include/rlgl.h" 
+#include "raylib/include/raygui.h"
+#include "raylib/include/rlgl.h" 
+
 #include "RayCPPKube.h"
 using namespace TeaLib;
 
