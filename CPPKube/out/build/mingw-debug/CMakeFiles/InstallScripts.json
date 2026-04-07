@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/Dev/VizualKube/CPPKube/out/build/mingw-debug/cmake_install.cmake",
+		"D:/Dev/VizualKube/CPPKube/out/build/mingw-debug/RayCPPKube/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
