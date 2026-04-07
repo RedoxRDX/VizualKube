@@ -1,6 +1,8 @@
 @echo off
 if not exist BUILD mkdir BUILD
-
+CD BUILD
+if not exist Win mkdir Win
+CD ..
 if exist resource.rc (
     windres resource.rc -O coff -o BUILD\icon.res
 )
@@ -16,7 +18,7 @@ g++ -O3 -DNDEBUG "RayCPPKube\RayCPPKube.cpp" %ICON_RES% ^
     -static-libgcc -static-libstdc++ -static ^
     -ffunction-sections -fdata-sections -Wl,--gc-sections ^
     -mwindows -s -w ^
-    -o "BUILD\RayCPPKube.exe"
+    -o "BUILD\Win\RayCPPKube.exe"
 
 echo building RayCPPKube with Console (win)
 g++ -O3 -DNDEBUG "RayCPPKube\RayCPPKube.cpp" %ICON_RES% ^
@@ -26,4 +28,7 @@ g++ -O3 -DNDEBUG "RayCPPKube\RayCPPKube.cpp" %ICON_RES% ^
     -static-libgcc -static-libstdc++ -static ^
     -ffunction-sections -fdata-sections -Wl,--gc-sections ^
     -w -s ^
-    -o "BUILD\RayCPPKubeKonsole.exe"
+    -o "BUILD\Win\RayCPPKubeKonsole.exe"
+echo deleting tmp files
+cd BUILD
+del icon.res

@@ -1,0 +1,10 @@
+{
+  "AppTmpDir": "C:\\tmp\\",
+  "PythonFile": "C:\\tmp\\PyKube.py",
+  "BatchFile": "C:\\tmp\\PyKube.bat",
+  "DoCleanTMPFiles": true,
+  "colorNumber": 2,
+  "KubeParts": "#",
+  "DoGeneratePyKube": true,
+  "configjsonfilename": "config.json"
+}
