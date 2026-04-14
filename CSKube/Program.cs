@@ -2,7 +2,8 @@
 using System.Text.Json;
 
 string AppTmpDir = @"C:\tmp\";
-string PythonFile = AppTmpDir + @"PyKube.py";
+string PythonFile = AppTmpDir + @"Py
+Kube.py";
 string BatchFile = AppTmpDir + @"PyKube.bat";
 bool DoCleanTMPFiles = true;
 int colorNumber = 2;
